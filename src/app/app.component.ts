@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {LoginService} from './login.service';
 
 
 @Component({
@@ -8,4 +9,8 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'pebbl';
+
+  constructor(private loginService: LoginService) {
+
+  }
 }
