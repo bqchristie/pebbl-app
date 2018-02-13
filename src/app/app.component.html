@@ -1,5 +1,7 @@
-<app-top-menu></app-top-menu>
-<div class="app">
+<app-login-form *ngIf="!loginService.isLoggedIn"></app-login-form>
+
+<app-top-menu *ngIf="loginService.isLoggedIn"></app-top-menu>
+<div *ngIf="loginService.isLoggedIn" class="app">
   <div class="title-bar"></div>
   <div class="app-body">
     <div class="lane-container">
@@ -12,3 +14,4 @@
     </div>
   </div>
 </div>
+
