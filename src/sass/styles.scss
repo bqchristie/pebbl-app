@@ -57,7 +57,7 @@ app-root {
       align-items: stretch;
       padding-top: 18px;
 
-      .lane-container {
+      app-lane-container {
         //#background-color: #ccc;
         overflow: auto;
         white-space: nowrap;
