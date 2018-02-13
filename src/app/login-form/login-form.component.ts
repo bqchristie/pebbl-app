@@ -3,12 +3,7 @@ import {LoginService} from '../login.service';
 
 @Component({
   selector: 'app-login-form',
-  template: `
-  <h2>{{msg}}</h2>
-    <input #username type='text'>
-    <input #password type='password'>
-    <button (click)="login(username.value, password.value)">Login</button>
-  `,
+  templateUrl : 'login-form.html',
   styles: []
 })
 export class LoginFormComponent implements OnInit {
