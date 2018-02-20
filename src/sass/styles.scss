@@ -152,6 +152,22 @@ app-login-form {
     }
 }
 
+app-board-view {
+  .board-list {
+    display: inline-flex;
+    .board-summary {
+      width:200px;
+      background-color: #2465bb;
+      color:white;
+      height: 150px;
+      box-shadow: 4px 4px 6px 1px #555555;
+      border-radius: 4px;
+      margin-right: 11px;
+      padding: 6px 6px 6px 6px;
+    }
+  }
+}
+
 button {
   text-transform: uppercase;
   letter-spacing: 0.2em;

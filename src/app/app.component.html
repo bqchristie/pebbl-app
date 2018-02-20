@@ -4,7 +4,8 @@
 <div *ngIf="!loginService.isLoggedIn" class="app">
   <div class="title-bar"></div>
   <div class="app-body">
-    <app-lane-container></app-lane-container>
+    <app-board-view ng-if="!currentList"></app-board-view>
+    <app-lane-container ng-if="currentList"></app-lane-container>
   </div>
 </div>
 

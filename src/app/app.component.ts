@@ -10,6 +10,7 @@ import {LoginService} from './login.service';
 })
 export class AppComponent {
   title = 'pebbl';
+  currentList = null;
 
   constructor(private loginService: LoginService) {
 
