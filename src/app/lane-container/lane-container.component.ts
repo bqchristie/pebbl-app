@@ -7,10 +7,11 @@ import {ListService} from '../list.service';
   styleUrls: ['./lane-container.component.scss']
 })
 export class LaneContainerComponent implements OnInit {
-  lists = [];
+  lists$;
 
   constructor(private listService: ListService) {
-    this.lists = listService.getLists();
+    this.lists$ = listService.getLists();
+    console.log(this.lists$);
   }
 
   ngOnInit() {

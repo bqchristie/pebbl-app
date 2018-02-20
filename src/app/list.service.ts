@@ -1,12 +1,15 @@
 import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http'
+import {Observable} from 'rxjs/Observable';
 
 @Injectable()
 export class ListService {
 
-  constructor() {
+  constructor(private http: HttpClient) {
   }
 
-  getLists() {
-    return ['List 1', 'List 2', 'List 3', 'List 4'];
+  getLists(): Observable<Object> {
+
+    return this.http.get('http://localhost:3000/api/v1/board')
   }
 }

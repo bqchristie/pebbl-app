@@ -1,7 +1,7 @@
-<app-login-form *ngIf="!loginService.isLoggedIn"></app-login-form>
+<!--<app-login-form *ngIf="loginService.isLoggedIn"></app-login-form>-->
 
-<app-top-menu *ngIf="loginService.isLoggedIn"></app-top-menu>
-<div *ngIf="loginService.isLoggedIn" class="app">
+<app-top-menu *ngIf="!loginService.isLoggedIn"></app-top-menu>
+<div *ngIf="!loginService.isLoggedIn" class="app">
   <div class="title-bar"></div>
   <div class="app-body">
     <app-lane-container></app-lane-container>

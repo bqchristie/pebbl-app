@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {HttpClientModule} from '@angular/common/http'
 
 import {AppComponent} from './app.component';
 import {LoginFormComponent} from './login-form/login-form.component';
@@ -16,7 +17,8 @@ import { LaneContainerComponent } from './lane-container/lane-container.componen
     LaneContainerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [LoginService, ListService],
   bootstrap: [AppComponent]
